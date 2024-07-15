@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jai Sathguru Fine Arts</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="about.html">
+    <img src="logo.png" width="450" height="50" class="d-inline-block align-top" alt="Your Logo">
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#">Event</a>
+      </li>-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="parentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gallery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="parentDropdown">
+		  <a class="dropdown-item" href="aug23.html">Aug-2023</a>
+          <a class="dropdown-item" href="sep23.html">Sep-2023</a>
+          <a class="dropdown-item" href="oct23.html">Oct-2023</a>
+          <a class="dropdown-item" href="nov23.html">Nov-2023</a>
+        </div>
+      </li>
+      <li class="nav-item">
+	    <a class="nav-link" href="#" onclick="scrollToFooter()">Contact</a>
+      </li>
+
+	  <li class="nav-item">
+	    <a class="btn btn-outline-light highlight-btn" onclick="openQRModal()">Donate</a>
+	  </li>
+	  <div class="qr_modal" id="qr_modal">
+		<span class="close" onclick="closeQRModal()">×</span>
+		<img src="donate.png" alt="Modal Image">
+	  </div>
+    </ul>
+  </div>
+</nav>
+
+<section>
+  <img src="banner.jpg" alt="Founder Image">
+  <div class="founder-info">
+    <img src="logo.jpg" alt="Founder Avatar" width="250" height="250">
+    <div class="founder-bio">
+      <h2>Jai Sathguru Fine Arts</h2>
+	  <p>It is a new sabha in PORUR found by Shri. A V MANIKANTAAN especially to promote music and culture.</p>
+	  <p>Shri. AVM has a thought to create platform for artists all over the world. The talented and deserved artist should get a stage for their performance without any obligation.</p>
+	  <p>Shri. AVM himself is an established mridangam artist who has a wish to teach rhythm to many young boys and girls and impart the knowledge of rhythm/music to all.</p>
+	  <p>With this desire he started a music school named JAI SATHGURU SANGEETHA VIDYALAYA at Adambakkam in the year 2005, with only 10 students.</p>
+	  <p>Now the school has grown with 100’s of students and have branches all over South India.</p>
+	  <p>With the support of students, well-wishers and music connoisseur he began this new sabha JAI SATHGURU FINE ARTS in the locality of Madanandapuram, Porur.</p>
+	  <p>This sabha was started three months back in a small premises with the capacity of 30/40 people and chamber concerts, LecDems, competitions, practice sessions and so on were conducted.</p>
+	  <p>Seeing the response, now the Sabha wishes to expand its wings for the general public.</p>
+	  <p>With that mark the first public concert was held in Sri Durga Lakshmi Saraswati Temple, Santhosh nagar, Madanandapuram, Chennai and the concert was sung by Smt, Gayathri Venkatragavan who is a star musician with great humility and it was supported by the stalwart Shri. M.R Gopinath on the violin, Shri. A V Manikantaan himself accompanied on the mridangam and Sri Sainath on the ghatam.</p>
+	  <p>The audience of the locality came in huge numbers and they stayed throughout the concert.</p>
+    </div>
+  </div>
+  
+  <div class="founder-info">
+    <img src="1.png" alt="Founder Avatar" width="250" height="250">
+    <div class="founder-bio">
+      <h2>About the founder</h2><h4>A V Manikantaan</h4>
+	  <p>A V Manikantaan was born in Chennai and hails from a musical family whose maternal grandfather Sri. S Gopalakrishnan was a mridangam artist and his mother G Subbulakshmi is a music teacher and a violinist, His brother Chennai A Srikanth Bhagavathar is also a renowned artist in the field of Namasankeerthanam.</p>
+	  <p>A V Manikantaan began learning the art under Late Shri. Vaideeswaran Koil Vaidhyanatha Iyer from the year 1988-1996.</p>
+	  <p>After 1997, he had the privilege and boon to continue his musical training under the divine tutelage of Shri Guru Kaaraikkudi Mani.</p>
+	  <p>He has completed M A Rhythmology ,Indian Music through The University of Madras in the year 2008. He is an "A" Graded artist from All India Radio and obtained the Award of Scholarship under the Cultural Talent Search Scholarship Scheme given by CCRT, New Delhi. 
+	  He is a founder of JAI SATHGURU SANGEETHA VIDYALAYA (Music School) and teaching Mridangam and Konnakol for more than 75 students. 
+	  Having a vision to bring more number of younger generation into the Mridangam field.</p>
+	  <p>Worked as a Guest Faculty ( Mridangam & Konnakol ) for Post Graduate Students in Dr. J Jayalalithaa Tamil Nadu Music and Fine Arts University.</p>
+	  <p>He had won the Best Mridangist award from The Music Academy Chennai in 2006 and 2011, won the best accompaniment award for the year 2002 and 2008 at Sri Krishna Gana Sabha, Best Percussionist Artist award in 2014 "Guru Karaikudi Mani" award from Karthik Fine Arts, Chennai</p>
+	  <p>In his musical journey, he is accompanying many stalwarts and great vidwans like Sri. O S Thiyagarajan, Smt. Sudha Ragunathan, Sri Kunakudi Balamuralikrishna and special performance with legends like Padmasri HARIDWARAMANGALAM SRI K. PALANIVEL, Ghatam maestro SRI VIKKU VINAYAKRAM, his guru "GURU KAARAIKKUDI MANI" and he is presently giving mridangam accompaniment to various star-studded artist, few to name are Sri.Rajesh Vaidhya, Madolin Sri.U Rajesh, Smt. Suchithra Balasubramanian, Sri. R.P.Shravan, Smt. Vasudha Ravi, Smt. Vidya Kalyanaraman ,Smt.Savitha Sriram, Hyderabad Sri.J S Sriram and so on.</p>
+	  <p>In Namasankeerthanam field he has accompanied, across generations, almost all the renowned and leading Bhagavathars like HH Sri RAMANANDA SRASWATI SWAMIJI, Udayalur Sri KALYANARAMAN Bhagavathar, Sri OS SUNDAR Bhagavathar, Sri Erode RAJAMANI Bhagavathar, Shri VIJAY and BALAJI Bhagavathar, Kadaiyanallur Sri RAJAGOPAL Bhagavathar, Shri Srikanth kountanian Bhagavathar, Shri Gnanaeshwar Bhagavathar, New Jersey Shri Swaminathan Bhagavathar and so on. The duo brothers Chennai A Srikanth Bhagavathar and A V Manikantaan are currently creating an impact in the field.</p>
+	  <p>He is a regular performer in the ALL INDIA RADIO, Chennai.</p>
+	  <p>A V Manikantaan has performed in almost all the regions in South India and travelled across the world and performed in CANADA, USA, UAE, BAHARIN, MALAYSIA, SOUTH AFRICA and so on.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="left-side">
+    <h3>Contact Us</h3>
+        <p>
+          <strong>Location:</strong><br>
+          D 45 , Shanthiniketan Westwoods, Madanandapuram,<br>
+Kundhrathur main road , Porur, Chennai 600 125
+        </p>
+        <p>
+		  <a href="mailto:someone@example.com"><i class="fa fa-envelope"> jaisathgurufinearts@gmail.com</i></a><br>
+		  <a class="phone" href="tel:+91 9080931695"><i class="fa fa-phone"> +91 9080931695</i></a><br>
+		  <a href="https://www.facebook.com/profile.php?id=61550021867029" target="_blank"><i class="fab fa-facebook-f"></i></a>&nbsp
+		  <a href="https://www.youtube.com/@JaiSathguruFineArts" target="_blank"><i class="fab fa-youtube"></i></a><br>
+        </p>
+  </div>
+  <!--<div class="right-side">
+    <h3>Donate</h3>
+        <p>
+          <strong>Account number:</strong> 510909010243627<br>
+		  <strong>Account name:</strong> JAI SATHGURU FINE ARTS<br>
+		  <strong>Bank:</strong> CITY UNION BANK<br>
+		  <strong>Branch:</strong> GERUGAMBAKKAM<br>
+		  <strong>IFSC code:</strong> CIUB0000304<br>
+		  <strong>Gpay number:</strong> 9080931695<br>
+        </p>
+  </div>-->
+  <div class="right-side">
+    <img src="donate.png" width="550" height="200"></img>
+  </div>
+</footer>
+<script src="myscript.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

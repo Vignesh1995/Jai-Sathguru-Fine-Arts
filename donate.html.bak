@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jai Sathguru Fine Arts</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="about.html">
+    <img src="logo.png" width="450" height="50" class="d-inline-block align-top" alt="Your Logo">
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Event</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="parentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gallery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="parentDropdown">
+		  <a class="dropdown-item" href="aug23.html">Aug-2023</a>
+          <a class="dropdown-item" href="sep23.html">Sep-2023</a>
+          <a class="dropdown-item" href="oct23.html">Oct-2023</a>
+          <a class="dropdown-item" href="nov23.html">Nov-2023</a>
+        </div>
+      </li>
+      <li class="nav-item">
+	    <a class="nav-link" href="#" onclick="scrollToSection('contact')">Contact</a>
+      </li>
+	  <li class="nav-item">
+	    <a class="btn btn-outline-light highlight-btn" href="donate.html">Donate</a>
+	  </li>
+    </ul>
+  </div>
+</nav>
+
+<footer>
+  <div class="left-side">
+    <h3>Contact Us</h3>
+        <p>
+          <strong>Location:</strong><br>
+          D 45 , Shanthiniketan Westwoods, Madanandapuram,<br>
+Kundhrathur main road , Porur, Chennai 600 125
+        </p>
+        <p>
+		  <a href="mailto:someone@example.com"><i class="fa fa-envelope"> jaisathgurufinearts@gmail.com</i></a><br>
+		  <a class="phone" href="tel:+91 9080931695"><i class="fa fa-phone"> +91 9080931695</i></a><br>
+		  <a href="https://www.facebook.com/profile.php?id=61550021867029" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		  <a href="https://www.youtube.com/@JaiSathguruFineArts" target="_blank"><i class="fab fa-youtube"></i></a><br>
+        </p>
+  </div>
+  <div class="right-side">
+    <img src="donate.png" width="500" height="200"></img>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoom.js/1.7.21/zoom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="about.html">
+    <img src="logo.png" width="450" height="50" class="d-inline-block align-top" alt="Your Logo">
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#">Event</a>
+      </li>-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="parentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gallery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="parentDropdown">
+		  <a class="dropdown-item" href="aug23.html">Aug-2023</a>
+          <a class="dropdown-item" href="sep23.html">Sep-2023</a>
+          <a class="dropdown-item" href="oct23.html">Oct-2023</a>
+          <a class="dropdown-item" href="nov23.html">Nov-2023</a>
+        </div>
+      </li>
+      <li class="nav-item">
+	    <a class="nav-link" href="#" onclick="scrollToFooter()">Contact</a>
+      </li>
+	  <li class="nav-item">
+	    <a class="btn btn-outline-light highlight-btn" onclick="openQRModal()">Donate</a>
+	  </li>
+	  <div class="qr_modal" id="qr_modal">
+		<span class="close" onclick="closeQRModal()">×</span>
+		<img src="donate.png" alt="Modal Image">
+	  </div>
+    </ul>
+  </div>
+</nav>
+<div class="gallery">
+  <div class="column">
+    <img src="oct-2023/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="oct-2023/14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 14</div>
+      <img src="oct-2023/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 14</div>
+      <img src="oct-2023/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 14</div>
+      <img src="oct-2023/3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 14</div>
+      <img src="oct-2023/4.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">5 / 14</div>
+      <img src="oct-2023/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 14</div>
+      <img src="oct-2023/6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 14</div>
+      <img src="oct-2023/7.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 14</div>
+      <img src="oct-2023/8.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">9 / 14</div>
+      <img src="oct-2023/9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 14</div>
+      <img src="oct-2023/10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 14</div>
+      <img src="oct-2023/11.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">12 / 14</div>
+      <img src="oct-2023/12.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 14</div>
+      <img src="oct-2023/13.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 14</div>
+      <img src="oct-2023/14.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    </div>
+</div>
+
+<!-- Modal for displaying larger images -->
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Zoomed Image">
+  </div>
+</div>
+
+<footer>
+  <div class="left-side">
+    <h3>Contact Us</h3>
+        <p>
+          <strong>Location:</strong><br>
+          D 45 , Shanthiniketan Westwoods, Madanandapuram,<br>
+Kundhrathur main road , Porur, Chennai 600 125
+        </p>
+        <p>
+		  <a href="mailto:someone@example.com"><i class="fa fa-envelope"> jaisathgurufinearts@gmail.com</i></a><br>
+		  <a class="phone" href="tel:+91 9080931695"><i class="fa fa-phone"> +91 9080931695</i></a><br>
+		  <a href="https://www.facebook.com/profile.php?id=61550021867029" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		  <a href="https://www.youtube.com/@JaiSathguruFineArts" target="_blank"><i class="fab fa-youtube"></i></a><br>
+        </p>
+  </div>
+  <div class="right-side">
+    <img src="donate.png" width="550" height="200"></img>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zoom.js/1.7.21/zoom.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  // Open modal with clicked image
+  function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+<script src="myscript.js"></script>
+</body>
+</html>
