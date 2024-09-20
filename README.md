@@ -1,1 +1,1 @@
-# Jai-Satguru-Fine-Arts
+# Jai-Sathguru-Fine-Arts
